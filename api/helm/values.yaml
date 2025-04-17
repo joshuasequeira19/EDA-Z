@@ -1,0 +1,20 @@
+# Default values for the bookstore-api chart
+replicaCount: 1
+
+image:
+  repository: ghcr.io/<your-github-username>/bookstore-api
+  tag: "1.0"
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 5000
+
+resources:
+  limits:
+    cpu: 100m
+    memory: 128Mi
+  requests:
+    cpu: 50m
+    memory: 64Mi
