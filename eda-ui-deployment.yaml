@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: eda-ui
+  labels:
+    app: eda-ui
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: eda-ui
+  template:
+    metadata:
+      labels:
+        app: eda-ui
+    spec:
+      containers:
+        - name: eda-ui
+          image: ghcr.io/joshuasequeira19/eda-ui:1.0
+          ports:
+            - containerPort: 3000

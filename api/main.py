@@ -165,7 +165,7 @@ mock_movies = [
         "categoryId": "tvshows",
         "category": "TV Shows",
         "description": "Geralt of Rivia, a solitary monster hunter, struggles to find his place in a world where people often prove more wicked than beasts.",
-        "imageUrl": "/images/movies/witcher.jpg",
+        "imageUrl": "/images/movies/Witcher.jpg",
         "duration": 60,
         "released": 2019,
         "cast": "Henry Cavill, Freya Allan, Anya Chalotra",

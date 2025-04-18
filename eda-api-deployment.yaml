@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: eda-api
+  labels:
+    app: eda-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: eda-api
+  template:
+    metadata:
+      labels:
+        app: eda-api
+    spec:
+      containers:
+        - name: eda-api
+          image: ghcr.io/joshuasequeira19/eda-api:1.0
+          ports:
+            - containerPort: 5000
+          env:
+            - name: CLOUD_API
+              value: "https://123.execute-api.us-east-1.amazonaws.com"
