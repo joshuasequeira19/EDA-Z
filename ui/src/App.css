@@ -1,6 +1,6 @@
 /* src/App.css */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 :root {
   --primary-color: #111111;
@@ -11,8 +11,8 @@
   --medium-gray: #666666;
   --light-gray: #999999;
   --card-bg: #181818;
-  --font-heading: 'Bebas Neue', sans-serif;
-  --font-body: 'Montserrat', sans-serif;
+  --font-heading: "Bebas Neue", sans-serif;
+  --font-body: "Montserrat", sans-serif;
 }
 
 * {
@@ -111,7 +111,8 @@ body {
 
 /* Hero Section */
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./hero-bg.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./hero-bg.jpg");
   background-size: cover;
   background-position: center;
   height: 80vh;
@@ -131,7 +132,7 @@ body {
 }
 
 .hero::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -172,8 +173,14 @@ body {
   transform: scale(1.05);
 }
 
+.cta-button .material-icons {
+  vertical-align: middle;
+  position: relative;
+}
+
 /* Categories Section */
-.categories-section, .featured-section {
+.categories-section,
+.featured-section {
   margin-bottom: 60px;
 }
 
@@ -334,7 +341,7 @@ h2 {
 }
 
 .quote-section::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -678,14 +685,22 @@ blockquote cite {
 }
 
 .loading::after {
-  content: '...';
+  content: "...";
   animation: loading-dots 1.5s infinite;
 }
 
 @keyframes loading-dots {
-  0%, 20% { content: '.'; }
-  40% { content: '..'; }
-  60%, 100% { content: '...'; }
+  0%,
+  20% {
+    content: ".";
+  }
+  40% {
+    content: "..";
+  }
+  60%,
+  100% {
+    content: "...";
+  }
 }
 
 /* Responsive design */
@@ -693,7 +708,7 @@ blockquote cite {
   .mobile-menu-button {
     display: block;
   }
-  
+
   .nav-links {
     position: absolute;
     top: 100%;
@@ -706,28 +721,28 @@ blockquote cite {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     display: none;
   }
-  
+
   .nav-links.open {
     display: flex;
   }
-  
+
   .hero {
     height: 60vh;
   }
-  
+
   .hero h1 {
     font-size: 2.5rem;
   }
-  
+
   .movie-detail {
     grid-template-columns: 1fr;
     gap: 30px;
   }
-  
+
   .movie-image {
     text-align: center;
   }
-  
+
   .watchlist-item {
     grid-template-columns: 80px 1fr;
     grid-template-areas:
@@ -736,19 +751,19 @@ blockquote cite {
       "remove remove";
     gap: 10px;
   }
-  
+
   .item-image {
     grid-area: image;
   }
-  
+
   .item-details {
     grid-area: details;
   }
-  
+
   .item-rating {
     grid-area: rating;
   }
-  
+
   .remove-item {
     grid-area: remove;
     justify-self: end;
