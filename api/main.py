@@ -43,7 +43,6 @@ mock_categories = [
         "name": "TV Shows",
         "description": "The best series to binge watch.",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9MIQeuda4gHaJrYtAGX8V7ODuE_m1x8PIaQ&s",
-        
     },
     {
         "id": "new",

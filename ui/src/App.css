@@ -168,14 +168,14 @@ body {
   letter-spacing: 1px;
 }
 
-.cta-button:hover {
-  background-color: #f40612;
-  transform: scale(1.05);
-}
-
 .cta-button .material-icons {
   vertical-align: middle;
   position: relative;
+}
+
+.cta-button:hover {
+  background-color: #f40612;
+  transform: scale(1.05);
 }
 
 /* Categories Section */
