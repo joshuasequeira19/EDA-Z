@@ -17,5 +17,6 @@ spec:
       containers:
         - name: eda-ui
           image: ghcr.io/joshuasequeira19/eda-ui:1.0
+          imagePullPolicy: Always
           ports:
             - containerPort: 3000

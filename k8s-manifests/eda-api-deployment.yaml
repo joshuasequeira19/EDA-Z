@@ -17,6 +17,7 @@ spec:
       containers:
         - name: eda-api
           image: ghcr.io/joshuasequeira19/eda-api:1.0
+          imagePullPolicy: Always
           ports:
             - containerPort: 5000
           env:
